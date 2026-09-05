@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - Base CRM Demo</title>
+<meta name="description" content="A static CRM system demo built for the Base Agency demo collection.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.ico" sizes="32x32 16x16">
+<link rel="stylesheet" href="static/css/brand-fonts.css">
+<link rel="stylesheet" href="static/css/tokens.css">
+<link rel="stylesheet" href="static/css/app.css">
+<link rel="stylesheet" href="static/css/charts.css">
+<link rel="stylesheet" href="static/css/utilities.css">
+<link rel="stylesheet" href="static/css/crm.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="app">
+  <nav class="sidebar on-dark" id="sidebar" aria-label="CRM modules">
+    <div class="sidebar__brand">
+      <span class="sidebar__crest" aria-hidden="true">CRM</span>
+      <span class="sidebar__wordmark">
+        <span class="sidebar__name">Base CRM</span>
+        <span class="sidebar__sub">Client revenue desk</span>
+      </span>
+    </div>
+
+    <div class="sidebar__scroll" id="navScroll"></div>
+
+    <div class="sidebar__foot">
+      <img src="static/img/base-logo-white.png" width="180" height="30" alt="Base Agency">
+      <span>Interface demo</span>
+    </div>
+  </nav>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="btn btn--icon topbar__menu" id="menuBtn" type="button"
+              aria-expanded="false" aria-controls="sidebar"></button>
+
+      <label class="search">
+        <span class="search__icon" id="searchIcon"></span>
+        <input type="search" id="globalSearch" autocomplete="off" placeholder="Search">
+      </label>
+
+      <span class="topbar__spacer"></span>
+
+      <button class="btn btn--primary collapse-label" id="quickDealBtn" type="button">
+        <span id="quickDealIcon"></span><span>New deal</span>
+      </button>
+      <button class="btn btn--icon" id="langBtn" type="button"
+              aria-haspopup="menu" aria-expanded="false"></button>
+      <button class="btn btn--icon" id="bellBtn" type="button"
+              aria-haspopup="menu" aria-expanded="false"></button>
+      <button class="btn btn--icon" id="userBtn" type="button"
+              aria-haspopup="menu" aria-expanded="false"></button>
+    </header>
+
+    <main class="content" id="main" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="toaster" id="toaster" aria-live="polite"></div>
+
+<script src="static/js/icons.js"></script>
+<script src="static/js/i18n.js"></script>
+<script src="static/js/charts.js"></script>
+<script src="static/js/ui.js"></script>
+<script src="static/js/data.js"></script>
+
+<script src="static/js/views/dashboard.js"></script>
+<script src="static/js/views/pipeline.js"></script>
+<script src="static/js/views/accounts.js"></script>
+<script src="static/js/views/contacts.js"></script>
+<script src="static/js/views/activities.js"></script>
+<script src="static/js/views/support.js"></script>
+<script src="static/js/views/reports.js"></script>
+<script src="static/js/views/admin.js"></script>
+
+<script src="static/js/app.js"></script>
+</body>
+</html>
